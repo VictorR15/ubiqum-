@@ -1,29 +1,50 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-  </head>
-  <body>
-    <header>
-      <img src="img/logo.webp" alt="logo" />
-      <h1>BIKES, PEDALS & MOUNTAINS</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About </a>
-        <a href="contact.html">Contact</a>
-      </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="style/brs_3.css" />
+</head>
+</head>
+
+
+<body>
+    <header class="header">
+      <div class="header__navbar">
+        <img class="header__img" src="img/logo.webp" alt="logo" />
+        <nav class="navbar">
+          <div class="navbar__list">
+            <a class="btn__navbar btn__navbar--active" href="index.html"
+              >Home</a
+            >
+            <a class="btn__navbar" href="about.html">About </a>
+            <a class="btn__navbar" href="contact.html">Contact</a>
+          </div>
+        </nav>
+      </div>
     </header>
-    <main>
-      <img src="img/Imagen1.jpg" alt="Imagen1" />
-      <h2>Upcoming Events</h2>
-      <p>Febraury 12</p>
-      <p>Board Meeting</p>
-      <p>February 25</p>
-      <p>Drivers Zoom Meeting</p>
-      <p>March 12</p>
-      <p>First Event at THE PIRINEES!</p>
+    <main class="main">
+      <h2 class="main__title">Upcoming Events</h2>
+      <div class="main__text">
+        <p class="main__subtitle">Febraury 12</p>
+        <p class="main__subtitleText tab">Board Meeting</p>
+        <p class="main__subtitle">February 25</p>
+        <p class="main__subtitleText tab">Cyclists Zoom Meeting</p>
+        <p class="main__subtitle">March 12</p>
+        <p class="main__subtitleText tab">First Event at the Pyrenees!</p>
+      </div>
     </main>
+
+    <footer class="footer">
+      <h2 class="footer__title">Bike Race Series</h2>
+      <div class="footer__list">
+        <a class="btn__footer btn__footer--active" href="index.html">Home</a>
+        <a class="btn__footer" href="about.html">About </a>
+        <a class="btn__footer" href="contact.html">Contact</a>
+      </div>
+    </footer>
   </body>
+
 </html>

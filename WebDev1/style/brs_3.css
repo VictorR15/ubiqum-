@@ -1,0 +1,149 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1REM 10PX */
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+/* HEADER */
+.header__navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .header__navbar {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.header__img {
+  height: 20rem;
+  object-fit: contain;
+}
+
+@media (min-width: 1024px) {
+  .header__img {
+    height: 30rem;
+    object-fit: contain;
+  }
+}
+
+.navbar__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .navbar__list {
+    gap: 5rem;
+    padding-top: 5rem;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.btn__navbar {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  width: 80%;
+  text-align: center;
+  padding: 1.5rem 0;
+  transition: background-color 0.8s;
+  border-radius: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .btn__navbar {
+    width: auto;
+    padding: 2rem 5rem;
+  }
+}
+
+.btn__navbar:hover,
+.btn__navbar--active {
+  background-color: black;
+  color: white;
+  width: 80%;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+@media (min-width: 1024px) {
+  .btn__navbar:hover,
+  .btn__navbar--active {
+    padding: 2rem 5rem;
+  }
+}
+
+/* MAIN */
+
+.main {
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .main__text {
+    text-align: start;
+    padding-left: 10rem;
+  }
+}
+
+.main__subtitle {
+  font-weight: bold;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: black;
+  padding-bottom: 5rem;
+}
+
+.footer__title {
+  color: white;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.btn__footer {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  width: 80%;
+  text-align: center;
+  padding: 1.5rem 0;
+  border-radius: 1rem;
+  transition: background-color 0.8s;
+}
+
+.btn__footer:hover {
+  background-color: white;
+  color: black;
+}
+
+/* ABOUT */
+
+/* CONTACT */
+.main__text .contact {
+  text-align: center;
+}
