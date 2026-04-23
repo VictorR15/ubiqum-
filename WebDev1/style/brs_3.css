@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* 1REM 10PX */
+  background-color: #e4e4e5;
 }
 *,
 *:before,
@@ -12,7 +13,18 @@ body {
   margin: 0;
 }
 
+p,
+ul {
+  font-size: 1.8rem;
+}
+
 /* HEADER */
+
+.header {
+  background-color: white;
+  padding-bottom: 5rem;
+}
+
 .header__navbar {
   display: flex;
   flex-direction: column;
@@ -97,7 +109,7 @@ body {
 @media (min-width: 1024px) {
   .main__text {
     text-align: start;
-    padding-left: 10rem;
+    padding: 0 10rem;
   }
 }
 
@@ -146,4 +158,14 @@ body {
 /* CONTACT */
 .main__text .contact {
   text-align: center;
+}
+
+/* RULES */
+
+.rules__orden {
+  list-style: none;
+}
+
+.flecha {
+  list-style: none;
 }
