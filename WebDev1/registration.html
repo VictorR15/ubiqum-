@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style/brs_3.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__navbar">
+        <img class="header__img" src="img/logo.webp" alt="logo" />
+        <nav class="navbar">
+          <div class="navbar__list">
+            <a class="btn__navbar" href="index.html">Home</a>
+            <a class="btn__navbar" href="about.html">About </a>
+            <a class="btn__navbar" href="contact.html">Contact</a>
+            <a class="btn__navbar btn__navbar--active" href="registration.html"
+              >Sign Up!</a
+            >
+            <a class="btn__navbar" href="rules.html">Rules</a>
+            <a class="btn__navbar" href="general_info.html"
+              >General Information</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__text">
+        <h2 class="main__title">
+          Bike Race Series (BRS) - Rider Registration Form
+        </h2>
+
+        <!-- PERSONAL INFORMATION -->
+        <form action="show_data.html" method="get" class="form">
+          <h3>Personal Infromation</h3>
+          <fieldset>
+            <div class="form__question">
+              <label class="question__title" for="firstName">First Name:</label>
+              <input
+                class="question__input"
+                type="text"
+                name="firstName"
+                id="firstName"
+              />
+            </div>
+            <div class="form__question">
+              <label class="question__title" for="lastName">Last Name:</label>
+              <input
+                class="question__input"
+                type="text"
+                name="lastName"
+                id="lastName"
+              />
+            </div>
+            <div class="form__question">
+              <label class="question__title" for="address"
+                >Street Address:</label
+              >
+              <input
+                class="question__input"
+                type="text"
+                name="address"
+                id="address"
+              />
+            </div>
+            <div class="form__question">
+              <label class="question__title" for="city">City:</label>
+              <input
+                class="question__input"
+                type="text"
+                name="city"
+                id="city"
+              />
+            </div>
+            <div class="form__question">
+              <label class="question__title" for="postalCode"
+                >Postal Code:</label
+              >
+              <input
+                class="question__input"
+                type="number"
+                name="postalCode"
+                id="postalCode"
+              />
+            </div>
+            <div class="form__question">
+              <label class="question__title" for="country">Country:</label>
+              <input
+                class="question__input"
+                type="text"
+                name="country"
+                id="country"
+              />
+            </div>
+            <div class="form__question">
+              <label class="question__title" for="dateBirth"
+                >Date of Birth (DD/MM/YYYY):</label
+              >
+              <input
+                class="question__input"
+                type="date"
+                name="dateBirth"
+                id="dateBirth"
+              />
+            </div>
+            <div class="form__question">
+              <label class="question__title" for="age">Age:</label>
+              <input
+                class="question__input"
+                type="number"
+                name="age"
+                id="age"
+              />
+            </div>
+          </fieldset>
+
+          <!-- GENDER -->
+
+          <h3>Gender:</h3>
+          <fieldset>
+            <div class="form__questionRadio">
+              <input type="radio" name="gender" id="female" />
+              <label class="question__title" for="female">Female</label>
+            </div>
+            <div class="form__questionRadio">
+              <input type="radio" name="gender" id="male" /><label
+                class="question__title"
+                for="male"
+                >Male</label
+              >
+            </div>
+            <div class="form__questionRadio">
+              <input type="radio" name="gender" id="other" /><label
+                class="question__title"
+                for="other"
+                >Other</label
+              >
+            </div>
+            <div class="form__questionRadio">
+              <input type="radio" name="gender" id="notSay" /><label
+                class="question__title"
+                for="notSay"
+                >Prefer not to say</label
+              >
+            </div>
+          </fieldset>
+
+          <!-- CONTACT INFORMATION -->
+
+          <h3>Contact Information</h3>
+          <fieldset>
+            <div class="form__question">
+              <label class="question__title" for="phone">Mobile Phone:</label>
+              <input
+                class="question__input"
+                type="number"
+                name="phone"
+                id="phone"
+              />
+            </div>
+            <div class="form__question">
+              <label class="question__title" for="email">Email Address:</label>
+              <input
+                class="question__input"
+                type="email"
+                name="email"
+                id="email"
+              />
+            </div>
+          </fieldset>
+
+          <!--Club Membership (if applicable) -->
+
+          <h3>Club Membership (if applicable)</h3>
+          <fieldset>
+            <div class="form__questionRadio">
+              <input type="radio" name="gender" id="uci" /><label
+                class="question__title"
+                for="uci"
+                >UCI-Affiliated National Federation
+              </label>
+            </div>
+            <div class="form__questionRadio">
+              <input type="radio" name="gender" id="britishcycling" /><label
+                class="question__title"
+                for="britishcycling"
+                >British Cycling
+              </label>
+            </div>
+            <div class="form__questionRadio">
+              <input type="radio" name="gender" id="federationfr" /><label
+                class="question__title"
+                for="federationfr"
+                >Fédération Française de Cyclisme</label
+              >
+            </div>
+            <div class="form__questionRadio">
+              <input type="radio" name="gender" id="federationca" /><label
+                class="question__title"
+                for="federationca"
+                >Federació Catalana de Ciclisme</label
+              >
+            </div>
+            <div class="form__questionRadio">
+              <input type="radio" name="gender" id="otherClub" /><label
+                class="question__title"
+                for="otherClub"
+                >Other:</label
+              ><input
+                class="question__input"
+                type="text"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="form__questionRadio">
+              <input type="radio" name="gender" id="none" /><label
+                class="question__title"
+                for="none"
+                >None</label
+              >
+            </div>
+          </fieldset>
+
+          <!-- Previous Competitive Cycling Experience -->
+
+          <h3>Previous Competitive Cycling Experience</h3>
+          <fieldset>
+            <div class="form__questionRadio">
+              <input type="radio" name="gender" id="nonePrevius" /><label
+                class="question__title"
+                for="nonePrevius"
+                >None</label
+              >
+            </div>
+            <div class="form__questionRadio">
+              <input type="radio" name="gender" id="local" /><label
+                class="question__title"
+                for="local"
+                >Local Trail/Community Races</label
+              >
+            </div>
+            <div class="form__questionRadio">
+              <input type="radio" name="gender" id="enduro" /><label
+                class="question__title"
+                for="enduro"
+                >Enduro/Downhill Regional Events</label
+              >
+            </div>
+            <div class="form__questionRadio">
+              <input type="radio" name="gender" id="cross" /><label
+                class="question__title"
+                for="cross"
+                >Cross-Country (XCO)</label
+              >
+            </div>
+            <div class="form__questionRadio">
+              <input type="radio" name="gender" id="oneSeason" /><label
+                class="question__title"
+                for="oneSeason"
+              >
+                One Season</label
+              >
+            </div>
+            <div class="form__questionRadio">
+              <input type="radio" name="gender" id="two" /><label
+                class="question__title"
+                for="two"
+              >
+                Two or More Seasons</label
+              >
+            </div>
+            <div class="form__questionRadio">
+              <input type="radio" name="gender" id="elite" /><label
+                class="question__title"
+                for="elite"
+                >Elite/UCI-licensed Rider</label
+              >
+            </div>
+          </fieldset>
+
+          <!-- Cycling License -->
+
+          <h3>Cycling License</h3>
+          <fieldset>
+            <div class="form__questionRadio">
+              <input type="radio" name="gender" id="noneCycling" /><label
+                class="question__title"
+                for="noneCycling"
+                >None</label
+              >
+            </div>
+            <div class="form__questionRadio">
+              <input type="radio" name="gender" id="national" /><label
+                class="question__title"
+                for="national"
+                >National Federation License
+              </label>
+            </div>
+            <div class="form__questionRadio">
+              <input type="radio" name="gender" id="uciLicense" /><label
+                class="question__title"
+                for="uciLicense"
+                >UCI License</label
+              >
+            </div>
+            <div class="form__question">
+              <label class="question__title" for="email"
+                >License Number (if applicable):</label
+              >
+              <input
+                class="question__input"
+                type="text"
+                name="licenseNumber"
+                id="licenseNumber"
+              />
+            </div>
+          </fieldset>
+
+          <!-- EMERGENCY CONTACT -->
+
+          <h3>Emergency Contact</h3>
+          <fieldset>
+            <div class="form__question">
+              <label class="question__title" for="nameEmergency">Name:</label>
+              <input
+                class="question__input"
+                type="text"
+                name="nameEmergency"
+                id="nameEmergency"
+              />
+            </div>
+            <div class="form__question">
+              <label class="question__title" for="relationship"
+                >Relationship:
+              </label>
+              <input
+                class="question__input"
+                type="text"
+                name="relationship"
+                id="relationship"
+              />
+            </div>
+            <div class="form__question">
+              <label class="question__title" for="numberEmergency"
+                >Phone Number:
+              </label>
+              <input
+                class="question__input"
+                type="number"
+                name="numberEmergency"
+                id="numberEmergency"
+              />
+            </div>
+          </fieldset>
+
+          <!--  RIDER AGREEMENT -->
+
+          <div class="agreement">
+            <h3>Rider Agreement</h3>
+            <p>
+              I agree to abide by all rules and safety regulations of the Bike
+              Race Series (BRS). I understand that mountain biking is inherently
+              dangerous and involves the risk of serious injury or death. I
+              acknowledge that it is my responsibility to ensure my equipment is
+              safe and that I ride within my abilities
+            </p>
+            <p>
+              By signing below, I waive all liability and indemnify BRS, its
+              organizers, volunteers, affiliates, and the race venues from any
+              claims or damages arising from participation in the series.
+            </p>
+          </div>
+          <fieldset>
+            <div class="form__question">
+              <label class="question__title" for="rider"
+                >Rider's Signature:
+              </label>
+              <input
+                class="question__input"
+                type="text"
+                name="rider"
+                id="rider"
+              />
+            </div>
+            <div class="form__question">
+              <label class="question__title" for="dateAgreement">Date: </label>
+              <input
+                class="question__input"
+                type="text"
+                name="dateAgreement"
+                id="dateAgreement"
+              />
+            </div>
+            <div class="form__question">
+              <label class="question__title" for="parent"
+                >Parent/Guardian Signature (if under 18):
+              </label>
+              <input
+                class="question__input"
+                type="text"
+                name="parent"
+                id="parent"
+              />
+            </div>
+          </fieldset>
+
+          <button class="btn" type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <h2 class="footer__title">Bike Race Series</h2>
+      <div class="footer__list">
+        <a class="btn__footer btn__footer--active" href="index.html">Home</a>
+        <a class="btn__footer" href="about.html">About </a>
+        <a class="btn__footer" href="contact.html">Contact</a>
+        <a class="btn__footer" href="registration.html">Sign Up!</a>
+        <a class="btn__footer" href="rules.html">Rules</a>
+        <a class="btn__footer" href="general_info.html">General Information</a>
+      </div>
+    </footer>
+  </body>
+</html>

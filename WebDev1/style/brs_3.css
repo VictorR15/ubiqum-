@@ -28,7 +28,7 @@ ul {
 .header__navbar {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 0;
 }
 
 @media (min-width: 1024px) {
@@ -59,7 +59,7 @@ ul {
 
 @media (min-width: 1024px) {
   .navbar__list {
-    gap: 5rem;
+    /* gap: 5rem; */
     padding-top: 5rem;
     flex-direction: row;
     align-items: center;
@@ -93,6 +93,19 @@ ul {
   padding: 1.5rem 0;
 }
 
+.btn {
+  padding: 2rem 5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  transition: background-color 0.8s;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
 @media (min-width: 1024px) {
   .btn__navbar:hover,
   .btn__navbar--active {
@@ -106,10 +119,24 @@ ul {
   text-align: center;
 }
 
+/* .main__text--maps {
+  position: relative;
+} */
+
+.maps__desktop {
+  display: none;
+}
+
 @media (min-width: 1024px) {
   .main__text {
     text-align: start;
     padding: 0 10rem;
+  }
+  .maps__phone {
+    display: none;
+  }
+  .maps__desktop {
+    display: block;
   }
 }
 
@@ -168,4 +195,75 @@ ul {
 
 .flecha {
   list-style: none;
+}
+
+/* REGISTRATION */
+
+fieldset {
+  border: 0;
+}
+
+.form__question {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  margin: 2rem 0;
+}
+
+@media (min-width: 1024px) {
+  .form__question {
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.question__title {
+  font-size: 2rem;
+}
+
+.question__input {
+  border: 0;
+  border-bottom: 1px black solid;
+  background-color: transparent;
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .question__input {
+    min-width: 50rem;
+  }
+}
+
+@media (min-width: 1024px) {
+}
+
+/* INPUT SQUARE */
+input[type="radio"] {
+  border: 1px solid black;
+  padding: 0.5em;
+  -webkit-appearance: none;
+}
+input[type="radio"]:checked {
+  background-color: black;
+}
+input[type="radio"]:focus {
+  outline-color: transparent;
+}
+
+/* INPUT RADIUS */
+
+.form__questionRadio {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.form__questionRadio input[type="text"] {
+  margin: 0;
+  padding: 0;
 }
